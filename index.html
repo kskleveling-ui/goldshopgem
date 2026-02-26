@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowGold - Shine Your Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-gold {
+            color: #d4af37; /* A common hex for gold */
+        }
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #ffeb99 50%, #d4af37 100%);
+        }
+
+        /* Basic Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-fade-in-down {
+            animation: fadeInDown 0.7s ease-out forwards;
+            animation-fill-mode: forwards; /* Ensures element stays in final state */
+            opacity: 0;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.7s ease-out forwards;
+            animation-delay: 0.2s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        .animate-scale-in {
+            animation: scaleIn 0.7s ease-out forwards;
+            animation-delay: 0.4s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="text-2xl font-bold text-gold">GlowGold</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#hero" class="text-gray-600 hover:text-gold transition duration-300">Home</a></li>
+                    <li><a href="#features" class="text-gray-600 hover:text-gold transition duration-300">Features</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-gold transition duration-300">About</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-gold transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-zinc-900 text-white py-20 md:py-32 lg:py-48 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://images.unsplash.com/photo-1599395111104-585a97327ddf?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-60"></div>
+        <div class="container mx-auto relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                Shine Your Story.
+                <span class="block text-gold mt-2">Golden Ornaments for the Modern Youth.</span>
+            </h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-in-up">
+                Discover exquisite gold ornaments that blend timeless elegance with contemporary flair. Express yourself, beautifully.
+            </p>
+            <a href="#features" class="inline-block bg-gold-gradient text-zinc-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 animate-scale-in">
+                Explore Our Collection
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Why Choose <span class="text-gold">GlowGold</span>?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-gold text-5xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423L16.5 16.5l.394 1.183a2.25 2.25 0 001.423 1.423L19.5 18.75l-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Trendsetting Designs</h3>
+                    <p class="text-gray-600">Stay ahead with unique, contemporary designs crafted for the youth of today.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-gold text-5xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423L16.5 16.5l.394 1.183a2.25 2.25 0 001.423 1.423L19.5 18.75l-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Superior Craftsmanship</h3>
+                    <p class="text-gray-600">Each piece is meticulously crafted by skilled artisans, ensuring lasting beauty and quality.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-gold text-5xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Ethical &amp; Sustainable</h3>
+                    <p class="text-gray-600">We commit to responsible sourcing, ensuring our gold is conflict-free and sustainable.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-gold text-5xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Personalized Experiences</h3>
+                    <p class="text-gray-600">Find pieces that resonate with your individual style or create custom designs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1611364239775-4ce1f016d9b4?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern gold jewelry" class="rounded-lg shadow-lg transform hover:scale-105 transition duration-500 ease-in-out">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About <span class="text-gold">GlowGold</span></h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    At <strong class="text-gold">GlowGold</strong>, we believe that gold isn't just an investment, it's an expression of identity. We're on a mission to redefine gold ornaments for the modern youth, offering pieces that are not only beautiful but also reflect their dynamic spirit and individual style.
+                </p>
+                <p class="text-lg text-gray-700">
+                    From minimalist designs to bold statements, our collection is curated to ensure every piece tells a story – your story. We combine traditional craftsmanship with innovative aesthetics, making luxury accessible and relevant to a new generation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gold-gradient text-center text-zinc-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Adorn Your Journey?</h2>
+            <p class="text-xl mb-8">Explore our exclusive collections designed for your unique style.</p>
+            <a href="#contact" class="inline-block bg-zinc-900 text-gold font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-zinc-800 transform hover:-translate-y-1 transition duration-300">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Contact <span class="text-gold">Us</span></h2>
+            <p class="text-lg text-gray-700 mb-8">Have questions, special requests, or just want to say hello? We'd love to hear from you!</p>
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition duration-300">
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition duration-300">
+                </div>
+                <div>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition duration-300"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gold-gradient text-zinc-900 font-semibold py-4 rounded-md shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 text-gray-300 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <a href="#" class="text-3xl font-bold text-gold">GlowGold</a>
+            </div>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-gold transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gold transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.717.01 3.653.047 3.041.124 4.468 1.542 4.581 4.591.037.936.047 1.223.047 3.653s-.01 2.717-.047 3.653c-.124 3.04-1.542 4.467-4.591 4.581-.936.037-1.223.047-3.653.047s-2.717-.01-3.653-.047c-3.041-.125-4.468-1.542-4.581-4.591-.037-.936-.047-1.223-.047-3.653s.01-2.717.047-3.653c.125-3.04 1.542-4.468 4.591-4.582.936-.037 1.223-.047 3.653-.047zm0 1.5c-2.613 0-2.91.01-3.885.051-2.69.11-3.852 1.566-3.96 4.298-.042.975-.05 1.272-.05 3.885s.01 2.91.05 3.885c.108 2.732 1.27 4.188 3.96 4.298.975.042 1.273.05 3.885.05s2.91-.01 3.885-.05c2.69-.11 3.852-1.566 3.96-4.298.042-.975.05-1.272.05-3.885s-.01-2.91-.05-3.885c-.108-2.732-1.27-4.188-3.96-4.298-.975-.042-1.272-.05-3.885-.05zm0 2.138a6.36 6.36 0 100 12.72 6.36 6.36 0 000-12.72zm0 1.5A4.86 4.86 0 110 12.138a4.86 4.86 0 010-9.72zm6.398-11.45a1.18 1.18 0 100 2.36 1.18 1.18 0 000-2.36z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gold transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M.052 16.604v7.262h4.594v-7.262H.052zm6.188 0v7.262h4.595v-7.262h-4.595zM.052 4.453l12.428-4.382 11.474 4.053-12.26 4.148L.052 4.453zm6.188 12.151h4.595v7.262h-4.595v-7.262zm0-10.435L.052 4.453l-.001 7.261 6.189 2.149V6.169zm6.188 10.435h4.595v7.262h-4.595v-7.262zm0-10.435L6.24 6.169v7.261l6.188 2.149V6.169zm6.188 10.435h4.595v7.262h-4.595v-7.262zm0-10.435L12.428 6.169v7.261l6.188 2.149V6.169zm6.188 0l-6.188-2.149L23.947 4.453l-.001 7.261-6.189 2.149V6.169z" />
+                    </svg>
+                </a>
+            </div>
+            <p>&copy; 2023 GlowGold. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
